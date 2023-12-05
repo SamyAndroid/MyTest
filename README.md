@@ -1,23 +1,26 @@
 # Samy Rdissi Test
- - App full Compose
 
 ## Architecture
 
+- [Clean-Architecture] Compose:UseCase:Repository:DataSource
 - [MVVM]
-- [Clean-Architecture]
-- [Use Case]
 
-## Technologies
+### Technologies
 
-- [Jetpack Compose] Declarative UI
-- [Kotlin] 100% Kotlin
-- [Gradle Kotlin DSL]
+- [Jetpack Compose] full
+- [Kotlin] full
+- [Gradle Kotlin DSL] for using Kotlin in gradle build configuration (as a replacement for Groovy)
 - [Coroutines] for asynchronous operations
+- [Flow] for flow observer
 - [Lifecycle-ktx]
 - [ViewModel]
-- [Navigation Component Compose]
+- [Navigation Component Compose] for Navigation inside app
 - [Dagger Hilt] for Dependency Injection
-- [Retrofit] for network operations
-- [OkHttp]
+- [Retrofit, OkHttp] for network operations
 - [Coil] for image loading
 - [Room] for Local storage
+- [Junit] for Unit test
+- [Mockito] for mock virtual object
+
+### Software
+- [IDE] Android Studio Giraffe | 2022.3.1 Patch 4

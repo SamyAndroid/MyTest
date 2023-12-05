@@ -7,6 +7,5 @@ data class SportEntity (
     @SerializedName("sportId")
     val id: Int,
 
-    @SerializedName("name")
     val name: String
 )

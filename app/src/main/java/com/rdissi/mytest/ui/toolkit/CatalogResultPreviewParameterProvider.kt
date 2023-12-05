@@ -1,7 +1,6 @@
 package com.rdissi.mytest.ui.toolkit
 
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
-import com.rdissi.mytest.data.local.mock.MockDataSource
 import com.rdissi.mytest.ui.catalog.CatalogViewModel
 
 class CatalogResultPreviewParameterProvider : PreviewParameterProvider<CatalogViewModel.UiState> {

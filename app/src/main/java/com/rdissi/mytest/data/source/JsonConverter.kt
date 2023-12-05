@@ -16,11 +16,6 @@ object JsonConverter {
         videos = this.videos.toVideos()
     )
 
-    fun Catalog.toCatalogJson() = CatalogJson(
-        stories = this.stories.toStoriesJson(),
-        videos = this.videos.toVideosJson()
-    )
-
     fun VideoJson.toVideo() = Video(
         id = this.id,
         title = this.title,

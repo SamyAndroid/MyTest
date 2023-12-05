@@ -33,12 +33,11 @@ fun StoryScreen(
     val context = LocalContext.current
     val lifecycleOwner = LocalLifecycleOwner.current
 
-    LaunchedEffect(key1 = Unit) {
+    LaunchedEffect(key1 = storyViewModel) {
         storyViewModel.uiEvent.collect { event ->
             when (event) {
                 is StoryViewModel.UiEvent.Toast -> showToast(context, event.message)
             }
-
         }
     }
     SideEffectWithLifeCycle(

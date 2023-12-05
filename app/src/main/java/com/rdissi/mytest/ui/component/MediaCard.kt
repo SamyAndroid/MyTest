@@ -20,9 +20,8 @@ import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
 import com.rdissi.mytest.domain.model.Media
-import com.rdissi.mytest.domain.model.Story
 import com.rdissi.mytest.domain.model.Video
-import com.rdissi.mytest.ui.toolkit.MediaPreviewParameterProvider
+import com.rdissi.mytest.ui.toolkit.MediaCardPreviewParameterProvider
 
 @Composable
 fun MediaCard(
@@ -96,7 +95,7 @@ fun MediaCard(
 @Preview(showBackground = true, name = "nam")
 @Composable
 fun MediaCardPreview(
-    @PreviewParameter(MediaPreviewParameterProvider::class) media: Media
+    @PreviewParameter(MediaCardPreviewParameterProvider::class) media: Media
 ) {
     MediaCard(media = media)
 }

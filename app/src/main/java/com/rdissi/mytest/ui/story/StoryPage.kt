@@ -28,6 +28,7 @@ import com.rdissi.mytest.domain.model.Sport
 import com.rdissi.mytest.domain.model.Story
 import com.rdissi.mytest.ui.component.HeaderImage
 import com.rdissi.mytest.ui.theme.Blue
+import com.rdissi.mytest.ui.toolkit.MockDataSource
 
 @Composable
 fun StoryPage(
@@ -135,14 +136,6 @@ fun StoryPage(
 @Composable
 fun StoryPagePreview() {
     StoryPage(
-        story = Story(
-            id = 5842,
-            title = "magnis",
-            date = 6.7,
-            sport = Sport(id = 6503, name = "Fran Rodriquez"),
-            author = "dictum",
-            image = "solet",
-            teaser = "Ce soir, c'est le weekend ! En ce 46e jour de confinement, il y a donc toutes les raisons d'avoir la forme. Surtout qu'il va y avoir de l'actualité ce jeudi. Cerise sur le gâteau : si vous voulez vous replonger dans les plus belles heures du sport, on a tout ce qu’il faut pour vous. Voici notre plateau matinal.",
-        ),
+        story = MockDataSource.getFirstMockStory()
     )
 }

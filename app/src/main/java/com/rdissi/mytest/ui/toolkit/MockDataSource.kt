@@ -1,4 +1,4 @@
-package com.rdissi.mytest.data.local.mock
+package com.rdissi.mytest.ui.toolkit
 import com.rdissi.mytest.data.remote.model.CatalogJson
 import com.rdissi.mytest.data.source.JsonConverter.toCatalog
 import com.rdissi.mytest.domain.model.Catalog

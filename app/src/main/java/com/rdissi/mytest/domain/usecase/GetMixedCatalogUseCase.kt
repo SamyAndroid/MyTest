@@ -6,6 +6,7 @@ import com.rdissi.mytest.domain.model.Media
 import com.rdissi.mytest.domain.model.mix
 import com.rdissi.mytest.domain.model.sortedByDescending
 import com.rdissi.mytest.domain.repository.CatalogRepository
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject

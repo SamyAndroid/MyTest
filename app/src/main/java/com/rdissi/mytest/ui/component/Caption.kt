@@ -12,7 +12,7 @@ import androidx.constraintlayout.compose.ConstrainedLayoutReference
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.ConstraintLayoutScope
 import com.rdissi.mytest.common.DateFormatter
-import com.rdissi.mytest.data.local.mock.MockDataSource
+import com.rdissi.mytest.ui.toolkit.MockDataSource
 import com.rdissi.mytest.domain.model.Media
 import com.rdissi.mytest.domain.model.Story
 import com.rdissi.mytest.domain.model.Video

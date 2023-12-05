@@ -26,7 +26,7 @@ object RetrofitModule {
                     addInterceptor(
                         HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY),
                     )
-                }.build(),
+                }.build()
             )
             .addConverterFactory(GsonConverterFactory.create())
             .build()

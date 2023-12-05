@@ -52,7 +52,7 @@ fun MainScreen(
 }
 @Composable
 fun updateTopBar(
-    navController: NavHostController,
+    navController: NavHostController
 ): TopBarInfo {
     val backStackEntry by navController.currentBackStackEntryAsState()
     val currentScreen = when (backStackEntry?.destination?.route) {
@@ -87,7 +87,7 @@ data class TopBarInfo(
     val title: String,
     val showBackIcon: Boolean,
     val showShareIcon: Boolean,
-    val isVisible: Boolean,
+    val isVisible: Boolean
 )
 
 @Preview(showBackground = true, showSystemUi = true)

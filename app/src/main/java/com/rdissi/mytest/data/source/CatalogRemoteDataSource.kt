@@ -7,5 +7,5 @@ import javax.inject.Inject
 class CatalogRemoteDataSource @Inject constructor(
     private val catalogApiService: CatalogApiService,
 ) {
-    suspend fun fetchCatalog(): CatalogJson = catalogApiService.getCatalog()
+    suspend fun fetchCatalog(): CatalogJson? = catalogApiService.getCatalog()
 }

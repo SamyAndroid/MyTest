@@ -18,10 +18,10 @@ import androidx.constraintlayout.compose.ConstraintLayoutScope
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.rdissi.mytest.R
-import com.rdissi.mytest.data.local.mock.MockDataSource
 import com.rdissi.mytest.domain.model.Media
 import com.rdissi.mytest.domain.model.Story
 import com.rdissi.mytest.domain.model.Video
+import com.rdissi.mytest.ui.toolkit.MockDataSource
 
 @Composable
 fun ConstraintLayoutScope.HeaderImage(

@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.rdissi.mytest.data.local.mock.MockDataSource
+import com.rdissi.mytest.ui.toolkit.MockDataSource
 import com.rdissi.mytest.domain.model.Media
 
 @Composable

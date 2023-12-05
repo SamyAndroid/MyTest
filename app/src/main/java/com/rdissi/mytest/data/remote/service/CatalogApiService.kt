@@ -7,5 +7,5 @@ import retrofit2.http.GET
 interface CatalogApiService {
 
     @GET("api/json-storage/bin/edfefba")
-    suspend fun getCatalog(): CatalogJson
+    suspend fun getCatalog(): CatalogJson?
 }

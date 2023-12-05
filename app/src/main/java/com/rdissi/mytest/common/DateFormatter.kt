@@ -13,15 +13,15 @@ object DateFormatter {
     fun formatLastViewTime(timestampSecond: Long): String {
         val now = Calendar.getInstance().timeInMillis
         val timestampMillis = TimeUnit.SECONDS.toMillis(timestampSecond)
-        val difference = now - timestampMillis
+        val elapsedTime = now - timestampMillis
         return when {
-            difference < ONE_MINUTE_MILLIS -> "Now"
-            difference < TWO_MINUTES_MILLIS -> "A minute ago"
-            difference < ONE_HOUR_MILLIS -> "${difference / ONE_MINUTE_MILLIS} minutes ago"
-            difference < TWO_HOURS_MILLIS -> "An hour ago"
-            difference < ONE_DAY_MILLIS -> "${difference / ONE_HOUR_MILLIS} hours ago"
-            difference < TWO_DAYS_MILLIS -> "Yesterday"
-            difference < ONE_WEEK_MILLIS -> "${difference / ONE_DAY_MILLIS} days ago"
+            elapsedTime < ONE_MINUTE_MILLIS -> "Now"
+            elapsedTime < TWO_MINUTES_MILLIS -> "A minute ago"
+            elapsedTime < ONE_HOUR_MILLIS -> "${elapsedTime / ONE_MINUTE_MILLIS} minutes ago"
+            elapsedTime < TWO_HOURS_MILLIS -> "An hour ago"
+            elapsedTime < ONE_DAY_MILLIS -> "${elapsedTime / ONE_HOUR_MILLIS} hours ago"
+            elapsedTime < TWO_DAYS_MILLIS -> "Yesterday"
+            elapsedTime < ONE_WEEK_MILLIS -> "${elapsedTime / ONE_DAY_MILLIS} days ago"
             else -> formatDate(timestampMillis)
         }
     }
@@ -36,6 +36,6 @@ object DateFormatter {
     private val TWO_MINUTES_MILLIS = TimeUnit.MINUTES.toMillis(2)
     private val TWO_HOURS_MILLIS = TimeUnit.HOURS.toMillis(2)
     private val TWO_DAYS_MILLIS = TimeUnit.DAYS.toMillis(2)
-    private val ONE_WEEK_MILLIS = 7 * TimeUnit.DAYS.toMillis(2)
+    private val ONE_WEEK_MILLIS = 7 * TimeUnit.DAYS.toMillis(1)
 
 }
