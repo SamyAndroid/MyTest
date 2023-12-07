@@ -2,8 +2,14 @@
 
 ## Architecture
 
-- [Clean-Architecture] Compose:UseCase:Repository:DataSource
-- [MVVM]
+- [Clean-Architecture]
+------------------------------------------
+    UI LAYER: Compose + View Model
+------------------------------------------
+    DOMAIN LAYER: Use case
+------------------------------------------
+    DATA LAYER: Repository + Data Source
+------------------------------------------
 
 ### Technologies
 
