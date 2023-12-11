@@ -3,12 +3,10 @@
 ## Architecture
 
 - [Clean-Architecture]
-------------------------------------------
-    UI LAYER: Compose + View Model
-------------------------------------------
-    DOMAIN LAYER: Use case
-------------------------------------------
-    DATA LAYER: Repository + Data Source
+
+UI LAYER: Compose + View Model
+DOMAIN LAYER: Use case
+DATA LAYER: Repository + Data Source
 ------------------------------------------
 
 ### Technologies
